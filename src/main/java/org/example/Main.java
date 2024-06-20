@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         Calculator calculator = new Calculator();
+        Display display = new Display();
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
@@ -18,13 +18,14 @@ public class Main {
 
             try {
                 double result = calculator.calculate(input);
-                System.out.println("Input: " + input);
-                System.out.println("Result: " + result);
+                display.showInput(input);
+                display.showResult(result);
             } catch (Exception e) {
-                System.out.println("Error: " + e.getMessage());
+                display.showError(e.getMessage());
             }
         }
 
         scanner.close();
     }
+
 }
