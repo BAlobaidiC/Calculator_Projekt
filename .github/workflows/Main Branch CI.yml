@@ -19,7 +19,7 @@ name: Set up JDK 21
       distribution: 'temurin'
       cache: maven
 name: Test with Maven
-  run: mvn -B package --file pom.xml
+  run: mvn -B package 
 
   publish-job:
 
