@@ -10,7 +10,7 @@ public class Display {
     }
 
     public void showInput(String input) {
-        out.println("Input: " + input);
+        out.println("Input:  " + input);
     }
 
     public void showResult(double result) {
