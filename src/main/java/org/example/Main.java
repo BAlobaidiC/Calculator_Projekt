@@ -41,7 +41,6 @@ public class Main {
                 System.out.println("History cleared.");
             }
         }
-
         scanner.close();
     }
 }
