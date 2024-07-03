@@ -17,8 +17,8 @@ public class Display {
         out.println("Result: " + result);
     }
 
-    public void showError(String message) {
-        out.println("Error: " + message);
+    public void showError(String error) {
+        out.println("Error: " + error);
     }
 
     public void showHistory(String history) {
