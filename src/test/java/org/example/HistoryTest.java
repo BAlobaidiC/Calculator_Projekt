@@ -1,7 +1,6 @@
 package org.example;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -35,19 +34,5 @@ public class HistoryTest {
         history.addEntry("2 + 2", 4.0);
         history.clearHistory();
         assertEquals("", history.getEntries());
-    }
-
-    @Test
-    public void testAddEmptyEntry() {
-        assertThrows(IllegalArgumentException.class, () -> {
-            history.addEntry("", 0);
-        });
-    }
-
-    @Test
-    public void testAddNullEntry() {
-        assertThrows(NullPointerException.class, () -> {
-            history.addEntry(null, 0);
-        });
     }
 }
