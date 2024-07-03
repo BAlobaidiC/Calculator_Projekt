@@ -15,6 +15,7 @@ public class Display {
 
     public void showResult(double result) {
         out.println("Result: " + result);
+        
     }
 
     public void showError(String message) {
