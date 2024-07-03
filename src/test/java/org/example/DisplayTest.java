@@ -27,28 +27,28 @@ public class DisplayTest {
 
     @Test
     public void testShowInput() {
-        Display display = new Display(new PrintStream(outputStream));
+        Display display = new Display(System.out);
         display.showInput("test input");
         assertEquals("Input: test input", outputStream.toString().trim());
     }
 
     @Test
     public void testShowResult() {
-        Display display = new Display(new PrintStream(outputStream));
+        Display display = new Display(System.out);
         display.showResult(42.0);
         assertEquals("Result: 42.0", outputStream.toString().trim());
     }
 
     @Test
     public void testShowError() {
-        Display display = new Display(new PrintStream(outputStream));
+        Display display = new Display(System.out);
         display.showError("test error");
         assertEquals("Error: test error", outputStream.toString().trim());
     }
 
     @Test
     public void testShowHistory() {
-        Display display = new Display(new PrintStream(outputStream));
+        Display display = new Display(System.out);
         display.showHistory("test history");
         assertEquals("History: \ntest history", outputStream.toString().trim());
     }
