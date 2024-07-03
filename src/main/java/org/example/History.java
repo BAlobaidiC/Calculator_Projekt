@@ -9,6 +9,7 @@ public class History {
 
     public void addEntry(String input, double result) {
         if (input == null) {
+            
             throw new NullPointerException("Input cannot be null");
         }
         if (input.isEmpty()) {
