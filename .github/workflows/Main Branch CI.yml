@@ -1,4 +1,4 @@
-name: Feature Branch CD
+name: Main Branch CI
 
 on:
   pull_request:
