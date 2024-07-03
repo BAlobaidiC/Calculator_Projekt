@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
-        Display display = new Display();
+        Display display = new Display(System.out);
         History history = new History();
         Scanner scanner = new Scanner(System.in);
 
