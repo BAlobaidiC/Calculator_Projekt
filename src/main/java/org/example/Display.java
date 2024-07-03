@@ -14,7 +14,7 @@ public class Display {
     }
 
     public void showHistory(String history) {
-        System.out.println("History: \n" + history);
+        System.out.println("History:: \n" + history);
     }
 
 
