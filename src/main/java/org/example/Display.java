@@ -1,21 +1,29 @@
 package org.example;
 
+import java.io.PrintStream;
+
 public class Display {
+    private final PrintStream out;
+
+    public Display(PrintStream out) {
+        this.out = out;
+    }
+
     public void showInput(String input) {
-        System.out.println("Input: " + input);
+        out.println("Input: " + input);
     }
 
     public void showResult(double result) {
-        System.out.println("Result: " + result);
+        out.println("Result: " + result);
     }
 
     public void showError(String message) {
-        System.out.println("Error: " + message);
+        out.println("Error: " + message);
     }
 
     public void showHistory(String history) {
         System.out.println("History:: \n" + history);
+        out.println("History: \n" + history);
+
     }
-
-
 }

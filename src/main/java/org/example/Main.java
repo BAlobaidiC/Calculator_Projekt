@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
-        Display display = new Display();
+        Display display = new Display(System.out);
         History history = new History();
         Scanner scanner = new Scanner(System.in);
 
@@ -29,7 +29,7 @@ public class Main {
             System.out.println("Do you want to see the history? (yes/yo)");
             String showHistory = scanner.nextLine();
 
-            if (showHistory.equalsIgnoreCase("yes")) {
+            if (showHistory.equalsIgnoreCase("yes ")) {
                 display.showHistory(history.getEntries());
             }
 
