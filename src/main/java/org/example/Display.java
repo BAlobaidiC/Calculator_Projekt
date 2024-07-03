@@ -2,7 +2,7 @@ package org.example;
 
 public class Display {
     public void showInput(String input) {
-        System.out.println("Input/Eingabe: " + input);
+        System.out.println("Input: " + input);
     }
 
     public void showResult(double result) {
