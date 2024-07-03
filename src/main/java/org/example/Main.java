@@ -26,7 +26,7 @@ public class Main {
                 display.showError(e.getMessage());
             }
 
-            System.out.println("Do you want to see the history? (yes/no)");
+            System.out.println("Do you want to see the history? (Yes/No)");
             String showHistory = scanner.nextLine();
 
             if (showHistory.equalsIgnoreCase("yes")) {
