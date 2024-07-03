@@ -10,7 +10,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("Enter a calculation (e.g., 5 + 3) or type 'exit' to quit:");
+            System.out.println("Enter a calculation (like 5 + 3) or type 'exit' to quit:");
             String input = scanner.nextLine();
 
             if (input.equalsIgnoreCase("exit")) {

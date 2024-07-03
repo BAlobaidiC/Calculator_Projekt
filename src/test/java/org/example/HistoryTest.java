@@ -38,16 +38,16 @@ public class HistoryTest {
     }
 
     @Test
-    public void testAddNullEntry() {
-        assertThrows(NullPointerException.class, () -> {
-            history.addEntry(null, 0);
+    public void testAddEmptyEntry() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            history.addEntry("", 0);
         });
     }
 
     @Test
-    public void testAddEmptyEntry() {
-        assertThrows(IllegalArgumentException.class, () -> {
-            history.addEntry("", 0);
+    public void testAddNullEntry() {
+        assertThrows(NullPointerException.class, () -> {
+            history.addEntry(null, 0);
         });
     }
 }
