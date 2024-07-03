@@ -43,6 +43,7 @@ public class DisplayTest {
     public void testShowError() {
         Display display = new Display(System.out);
         display.showError("test error");
+        
         assertEquals("Error: test error", outputStream.toString().trim());
     }
 
