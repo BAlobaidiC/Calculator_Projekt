@@ -20,6 +20,8 @@ public class Calculator {
         return a / b;
     }
 
+
+
     public double calculate(String input) throws Exception {
         String[] parts = input.split(" ");
         double a = Double.parseDouble(parts[0]);
