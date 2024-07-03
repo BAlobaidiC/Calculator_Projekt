@@ -22,6 +22,6 @@ public class Display {
     }
 
     public void showHistory(String history) {
-        out.println("History: \n" + history);
+        out.println("History:: \n" + history);
     }
 }
